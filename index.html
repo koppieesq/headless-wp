@@ -21,6 +21,17 @@
 <div id="query-box">
     <!--  This isn't a real form; submit is handled by javascript.  -->
     <input type="text" name="query" id="query">
+    <select id="number">
+        <option value="10">10 results</option>
+        <option value="20">20 results</option>
+        <option value="50">50 results</option>
+        <option value="100">100 results</option>
+    </select>
+    <select id="sortby">
+        <option>Sort by . . .</option>
+        <option value="alphabetical">Alphabetical</option>
+        <option value="reverse">Reverse Alphabetical</option>
+    </select>
     <button id="submitButton">Submit</button>
 </div>
 <div id="result"></div>
