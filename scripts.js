@@ -1,4 +1,5 @@
 document.getElementById("submitButton").onclick = function(){
     let query = document.getElementById("query").value;
-    alert(query);
+    let result = 'Your query was ' + query;
+    document.getElementById("result").innerHTML = result;
 };

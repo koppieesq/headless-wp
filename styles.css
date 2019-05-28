@@ -1,4 +1,8 @@
 body {
     /* Uses webfonts. */
-    font-family:'Helvetica Now Display W05 Rg';
+    font-family: 'Lato', sans-serif;
+}
+
+#result {
+    margin: 2em 1em;
 }
