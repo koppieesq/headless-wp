@@ -8,13 +8,16 @@ document.getElementById("submitButton").onclick = function(){
     fetch(url)
         .then(res => res.json())
         .then((out) => {
+            let items = out.query.pages;
             // Calculate the results.
-            console.log('Checkout this JSON! ', out.query.pages);
+            console.log('Checkout this JSON! ', items);
+            let results = "<ul>";
+            for (let key in items) {
+                results = results + "<li>" + items[key]["title"] + "</li>";
+            };
+            results = results + "</ul>";
             // Paste results onto the page.
-            out.query.pages.forEach(function () {
-                
-            });
-            document.getElementById("result").innerHTML = out.query.pages;
+            document.getElementById("result").innerHTML = results;
         })
         .catch(err => { throw err });
 
