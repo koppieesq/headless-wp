@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Headless Wikipedia</title>
+    <!--  Adds webfonts - I hope that's ok.  -->
     <script type="text/javascript" src="//fast.fonts.net/jsapi/0257c93b-0f99-4ea3-a760-e75890b0c02e.js"></script>
 </head>
 <body>
 <h1>Headless Wikipedia</h1>
 <div id="intro">
-    Enter your query here:
+    <p>This is a proof of concept, showing how you can make a "headless" one-page version of Wikipedia, using the mediawiki api and javascript.  All done in under 24 hours.</p>
+    <p>Enter your query here:</p>
 </div>
 <div id="query-box">
+<!--    -->
     <form>
+        <input type="text" name="query">
         <button>Submit</button>
     </form>
 </div>
