@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Headless Wikipedia</title>
+
     <!--  Adds webfonts - I hope that's ok.  -->
     <script type="text/javascript" src="//fast.fonts.net/jsapi/0257c93b-0f99-4ea3-a760-e75890b0c02e.js"></script>
+
+    <!--  Adds css in a separate file.  -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 <h1>Headless Wikipedia</h1>
 <div id="intro">
@@ -13,12 +18,13 @@
     <p>Enter your query here:</p>
 </div>
 <div id="query-box">
-<!--    -->
-    <form>
-        <input type="text" name="query">
-        <button>Submit</button>
-    </form>
+    <!--  This isn't a real form; submit is handled by javascript.  -->
+    <input type="text" name="query" id="query">
+    <button id="submitButton">Submit</button>
 </div>
 <div id="result"></div>
+
+<!--  Javascript is loaded at the end, so the objects already exist.  -->
+<script src="scripts.js"></script>
 </body>
 </html>
