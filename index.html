@@ -16,18 +16,18 @@
 <div id="intro">
     <p>This is a proof of concept, showing how you can make a "headless" one-page version of Wikipedia, using the mediawiki api and javascript.  All done in under 24 hours.</p>
     <p><em><strong>Note: </strong>If you try to run this locally, you'll run into CORB protection on some browsers.  Bypass CORB protection using <a href="https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc/related?hl=en-US">this Chrome extension</a>. </em></p>
-    <p>Enter your query here:</p>
 </div>
 <div id="query-box">
     <!--  This isn't a real form; submit is handled by javascript.  -->
-    <input type="text" name="query" id="query">
-    <select id="number">
+    <p>Enter your query here:</p>
+    <input type="text" name="query" id="query" aria-label="search query">
+    <select id="number" aria-label="number of results">
         <option value="10">10 results</option>
         <option value="20">20 results</option>
         <option value="50">50 results</option>
         <option value="100">100 results</option>
     </select>
-    <select id="sortby">
+    <select id="sortby" aria-label="sort options">
         <option>Sort by . . .</option>
         <option value="alphabetical">Alphabetical</option>
         <option value="reverse">Reverse Alphabetical</option>

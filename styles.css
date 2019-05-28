@@ -1,8 +1,19 @@
 body {
     /* Uses webfonts. */
     font-family: 'Lato', sans-serif;
+    background: lightslategray;
 }
 
-#result {
-    margin: 2em 1em;
+h1, #intro, #query-box, #result {
+    background: whitesmoke;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#query-box, #result {
+    margin-top: 1em;
+}
+
+#query-box {
+    padding-bottom: 1em;
 }
