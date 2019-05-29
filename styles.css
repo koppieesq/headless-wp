@@ -11,7 +11,7 @@ h1, #intro, #query-box, #result {
 }
 
 #query-box, #result {
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 #query-box {
