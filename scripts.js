@@ -15,14 +15,7 @@ document.getElementById("submitButton").onclick = function(){
     let url = "https://en.wikipedia.org/w/api.php?action=query&generator=allpages&gaplimit=" + limit + "&gapfrom=" + query + "&prop=links%7Ccategories&format=json";
 
     // Get the results.
-    fetch(url, {
-            method: 'GET',
-            mode: 'cors',
-            headers: {
-                'Content-Type': 'application/json',
-                "Accept": 'application/json',
-            }
-        })
+    fetch(url)
         .then(res => res.json())
         .then((out) => {
             let itemsRaw = out.query.pages;
